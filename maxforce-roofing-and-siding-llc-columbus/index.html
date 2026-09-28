@@ -1,0 +1,263 @@
+<!doctype html>
+<!-- Placeholders in double braces are filled by .claude/skills/build-demo. Only real facts about the business.
+     Themes come from designer/research: dental = dental-clinic-site (r01 r02 r03 r05), home = home-services-site,
+     auto = auto-repair-site (r01 r24). -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>MaxForce Roofing &amp; Siding: preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&display=swap">
+<style>
+  /* dental: cream + forest, serif display, pill buttons (dental r01/r03) */
+  [data-theme="dental"] { --bg: #FFFEF3; --surface: #F6F2E4; --ink: #141414; --muted: #55584F; --line: #E3DFCC;
+    --accent: #2E513E; --on-accent: #FFFEF3; --band: #2E513E; --on-band: #FFFEF3; --band-muted: #C9D6CC; --hi: #FFF8C1;
+    --display: "Fraunces", Georgia, serif; --body: "Hanken Grotesk", system-ui, sans-serif; --radius: 999px; --card-radius: 20px;
+    --h1-weight: 400; --h1-track: -0.02em; }
+  /* home: navy + safety yellow, heavy sans, urgent call strip (home-services-site r02 r32) */
+  [data-theme="home"] { --bg: #F1F5F8; --surface: #FFFFFF; --ink: #15181D; --muted: #475361; --line: #D9E0E7;
+    --accent: #172751; --on-accent: #FFFFFF; --band: #172751; --on-band: #FFFFFF; --band-muted: #BAC4D6; --hi: #FEE600;
+    --display: "Archivo", system-ui, sans-serif; --body: "Archivo", system-ui, sans-serif; --radius: 8px; --card-radius: 12px;
+    --h1-weight: 800; --h1-track: -0.03em; }
+  /* auto: dark workshop, one orange accent, square edges, numbered list (auto r24, 3-step row from r01) */
+  [data-theme="auto"] { --bg: #0D0D0D; --surface: #161616; --ink: #F4F4F2; --muted: #A3A3A0; --line: #2A2A2A;
+    --accent: #FF7A00; --on-accent: #0D0D0D; --band: #FF7A00; --on-band: #0D0D0D; --band-muted: #3A1E00; --hi: #FF7A00;
+    --display: "Inter Tight", system-ui, sans-serif; --body: "Inter Tight", system-ui, sans-serif; --radius: 0px; --card-radius: 0px;
+    --h1-weight: 600; --h1-track: -0.035em; }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 17px/1.6 var(--body); color: var(--ink); background: var(--bg); -webkit-font-smoothing: antialiased; }
+  body[data-theme="auto"] {
+    background-image: linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: calc(100% / 4) 100%; }
+  a { color: inherit; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+  @media (min-width: 720px) { .wrap { padding: 0 32px; } }
+  .preview { background: #111; color: #fff; font: 13px/1.4 system-ui, sans-serif; text-align: center; padding: 8px 16px; }
+
+  header .wrap { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-top: 18px; padding-bottom: 18px; }
+  .logo { font: 600 20px/1.2 var(--display); letter-spacing: -0.01em; text-decoration: none; }
+  nav { display: flex; align-items: center; gap: 24px; }
+  nav .link { display: none; text-decoration: none; color: var(--muted); font-size: 15px; }
+  @media (min-width: 720px) { nav .link { display: inline; } }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 22px;
+         border-radius: var(--radius); border: 1px solid var(--accent); background: var(--accent); color: var(--on-accent);
+         font: 600 16px/1 var(--body); text-decoration: none; cursor: pointer; transition: transform .15s ease, opacity .15s ease; }
+  .btn:hover { opacity: .92; } .btn:active { transform: scale(.98); }
+  .btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+  .btn.small { min-height: 44px; padding: 10px 16px; font-size: 15px; }
+
+  .hero { padding: 56px 0 72px; display: grid; gap: 40px; }
+  @media (min-width: 900px) { .hero { grid-template-columns: 1.4fr 1fr; align-items: end; padding: 96px 0 104px; } }
+  .eyebrow { display: flex; align-items: center; gap: 12px; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 20px; }
+  .eyebrow::before { content: ""; width: 40px; height: 1px; background: currentColor; }
+  h1 { font: var(--h1-weight) clamp(40px, 7vw, 76px)/1.02 var(--display); letter-spacing: var(--h1-track); margin: 0 0 20px; text-wrap: balance; }
+  .lede { color: var(--muted); font-size: 19px; max-width: 32em; margin: 0 0 32px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .quick { background: var(--surface); border: 1px solid var(--line); border-radius: var(--card-radius); padding: 24px; display: grid; gap: 16px; }
+  .quick dt { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .quick dd { margin: 2px 0 0; font-size: 17px; }
+  .quick dl { margin: 0; display: grid; gap: 14px; }
+
+  .strip { background: var(--hi); color: #111; }
+  .strip .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; padding-top: 14px; padding-bottom: 14px; font-weight: 600; }
+  .strip a { font-weight: 800; }
+  [data-theme="auto"] .strip, [data-theme="dental"] .strip { display: none; }
+
+  section.block { padding: 72px 0; border-top: 1px solid var(--line); }
+  .num { display: flex; justify-content: space-between; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 28px; }
+  h2 { font: var(--h1-weight) clamp(30px, 4.4vw, 46px)/1.08 var(--display); letter-spacing: var(--h1-track); margin: 0 0 36px; max-width: 18em; }
+  .services { list-style: none; margin: 0; padding: 0; counter-reset: s; }
+  .services li { counter-increment: s; display: grid; gap: 6px 32px; padding: 24px 0; border-top: 1px solid var(--line); }
+  .services li:last-child { border-bottom: 1px solid var(--line); }
+  @media (min-width: 720px) { .services li { grid-template-columns: 64px 1fr 1.3fr; align-items: baseline; } }
+  .services li::before { content: "0" counter(s); font: 500 14px/1 var(--body); color: var(--accent); }
+  .services h3 { margin: 0; font: 600 22px/1.25 var(--display); letter-spacing: -0.01em; }
+  .services p { margin: 0; color: var(--muted); }
+
+  .steps { display: grid; gap: 16px; list-style: none; padding: 0; margin: 0; counter-reset: st; }
+  @media (min-width: 720px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+  .steps li { counter-increment: st; background: var(--surface); border: 1px solid var(--line); border-radius: var(--card-radius); padding: 24px; }
+  .steps li::before { content: counter(st); display: grid; place-items: center; width: 36px; height: 36px; margin-bottom: 16px;
+                      border-radius: var(--radius); background: var(--accent); color: var(--on-accent); font-weight: 700; }
+  .steps b { display: block; font: 600 19px/1.3 var(--display); margin-bottom: 6px; }
+  .steps span { color: var(--muted); }
+
+  .visit { display: grid; gap: 16px; }
+  @media (min-width: 720px) { .visit { grid-template-columns: repeat(3, 1fr); } }
+  .visit div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--card-radius); padding: 24px; }
+  .visit h3 { margin: 0 0 8px; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+  .visit p { margin: 0; font-size: 18px; }
+
+  .band { background: var(--band); color: var(--on-band); padding: 80px 0; }
+  .band h2 { margin-bottom: 16px; }
+  .band p { color: var(--band-muted); margin: 0 0 28px; font-size: 18px; max-width: 34em; }
+  .band .btn { background: var(--on-band); color: var(--band); border-color: var(--on-band); }
+  .band .btn.ghost { background: transparent; color: var(--on-band); border-color: currentColor; }
+
+  footer { padding: 56px 0 112px; }
+  .wordmark { font: var(--h1-weight) clamp(44px, 11vw, 150px)/0.95 var(--display); letter-spacing: -0.04em; margin: 0 0 32px; overflow-wrap: anywhere; }
+  footer p { color: var(--muted); font-size: 14px; margin: 4px 0; }
+
+  /* scripted assistant widget */
+  #chat-toggle { position: fixed; right: 16px; bottom: 16px; z-index: 10; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+  #chat { position: fixed; right: 16px; bottom: 80px; z-index: 10; width: min(360px, calc(100vw - 32px)); max-height: 70vh; display: none;
+          flex-direction: column; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: var(--card-radius);
+          box-shadow: 0 16px 48px rgba(0,0,0,.28); overflow: hidden; }
+  #chat.open { display: flex; animation: pop .18s ease-out; }
+  @keyframes pop { from { opacity: 0; transform: translateY(8px) scale(.98); } }
+  #chat .head { background: var(--accent); color: var(--on-accent); padding: 14px 16px; font-weight: 700; }
+  #log { padding: 14px; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+  .msg { padding: 10px 12px; border-radius: 12px; max-width: 85%; font-size: 15px; }
+  .bot { background: var(--bg); align-self: flex-start; }
+  .me { background: var(--accent); color: var(--on-accent); align-self: flex-end; }
+  #opts { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 14px 14px; }
+  #opts button:not(.btn) { border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 999px; padding: 8px 12px;
+                            font: 14px var(--body); cursor: pointer; min-height: 40px; }
+  #chat form { display: grid; gap: 8px; width: 100%; }
+  #chat label { display: grid; gap: 4px; font-size: 14px; }
+  #chat input { font: 16px var(--body); padding: 10px; border: 1px solid var(--line); border-radius: 8px; width: 100%; background: var(--bg); color: var(--ink); }
+  :focus-visible { outline: 3px solid var(--hi); outline-offset: 2px; }
+  [data-theme="dental"] :focus-visible { outline-color: var(--accent); }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body data-theme="home">
+<div class="preview">Free preview built for MaxForce Roofing &amp; Siding by Dhyey Sapara. Not live, not affiliated.</div>
+
+<header><div class="wrap">
+  <a class="logo" href="#top">MaxForce Roofing &amp; Siding</a>
+  <nav>
+    <a class="link" href="#services">Services</a>
+    <a class="link" href="#visit">Visit</a>
+    <a class="btn small needs-phone" href="tel:+16144678910">Call (614) 467-8910</a>
+  </nav>
+</div></header>
+
+<div class="strip"><div class="wrap">
+  <span>Calls you can't take right now still get answered here, 24/7.</span>
+  <a class="needs-phone" href="tel:+16144678910">(614) 467-8910</a>
+</div></div>
+
+<main id="top">
+<section class="wrap hero">
+  <div>
+    <p class="eyebrow">Columbus, Ohio</p>
+    <h1>Roofing and siding done right in Columbus</h1>
+    <p class="lede">Roof repair, replacement and siding for Columbus homes. Request a free quote any time, even after hours.</p>
+    <div class="actions">
+      <button class="btn" onclick="openChat('book')">Request a free quote</button>
+      <a class="btn ghost needs-phone" href="tel:+16144678910">Call now</a>
+    </div>
+  </div>
+  <div class="quick">
+    <dl>
+      <div><dt>Where</dt><dd>2762 Sawbury Boulevard, Columbus, OH</dd></div>
+      <div><dt>Hours</dt><dd>Call for today's hours</dd></div>
+      <div class="needs-phone"><dt>Phone</dt><dd><a href="tel:+16144678910">(614) 467-8910</a></dd></div>
+    </dl>
+    <button class="btn ghost" onclick="openChat()">Ask a question</button>
+  </div>
+</section>
+
+<section class="block" id="services"><div class="wrap">
+  <div class="num"><span>01 · Services</span><span>Columbus, Ohio</span></div>
+  <h2>What we do</h2>
+  <ol class="services">
+    <li><h3>Roof repair</h3><p>Leaks, missing shingles and worn flashing fixed before they turn into bigger damage.</p></li>
+    <li><h3>Roof replacement</h3><p>Tear-off and new roof when repairs no longer make sense.</p></li>
+    <li><h3>Storm damage inspection</h3><p>A look at your roof after wind or hail so you know what needs attention.</p></li>
+    <li><h3>Siding</h3><p>Siding work to keep the outside of your home sealed and looking right.</p></li>
+    <li><h3>Gutters</h3><p>Gutter work so water drains away from your roof and foundation.</p></li>
+  </ol>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <div class="num"><span>02 · Booking</span><span>Open 24/7 online</span></div>
+  <h2>Request a free quote in under a minute</h2>
+  <ol class="steps">
+    <li><b>Tell us what you need</b><span>Pick a question or tap "Request a free quote" below.</span></li>
+    <li><b>Leave your name and number</b><span>Any time, even after hours or on weekends.</span></li>
+    <li><b>We get back to you</b><span>MaxForce Roofing &amp; Siding confirms the details with you directly.</span></li>
+  </ol>
+</div></section>
+
+<section class="block" id="visit"><div class="wrap">
+  <div class="num"><span>03 · Visit</span><span>Columbus, Ohio</span></div>
+  <h2>Find us</h2>
+  <div class="visit">
+    <div><h3>Address</h3><p>2762 Sawbury Boulevard, Columbus, OH</p></div>
+    <div><h3>Hours</h3><p>Call for today's hours</p></div>
+    <div class="needs-phone"><h3>Phone</h3><p><a href="tel:+16144678910">(614) 467-8910</a></p></div>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <h2>Request a free quote any time.</h2>
+  <p>Even after hours. MaxForce Roofing &amp; Siding gets your request and follows up.</p>
+  <div class="actions">
+    <button class="btn" onclick="openChat('book')">Request a free quote</button>
+    <a class="btn ghost needs-phone" href="tel:+16144678910">Call (614) 467-8910</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p class="wordmark">MaxForce Roofing &amp; Siding</p>
+  <p>MaxForce Roofing &amp; Siding · 2762 Sawbury Boulevard, Columbus, OH<span class="needs-phone"> · (614) 467-8910</span></p>
+  <p>Preview only. Content from public listings; MaxForce Roofing &amp; Siding can change anything.</p>
+</div></footer>
+
+<button id="chat-toggle" class="btn" onclick="toggleChat()" aria-expanded="false" aria-controls="chat">Ask us anything</button>
+<div id="chat" role="dialog" aria-label="Assistant">
+  <div class="head">MaxForce Roofing &amp; Siding assistant</div>
+  <div id="log" aria-live="polite"></div>
+  <div id="opts"></div>
+</div>
+
+<script>
+// Scripted assistant: no AI calls, no data leaves the page. Answers come only from FAQ below.
+const FAQ = [{"q": "Where are you located?", "a": "2762 Sawbury Boulevard, Columbus, OH."}, {"q": "What are your hours?", "a": "Call us at (614) 467-8910 for today's hours."}, {"q": "How do I get a free quote?", "a": "Tap the request button and leave your details, or call us at (614) 467-8910."}, {"q": "Do you work on siding too?", "a": "Yes, we do roofing and siding. Call (614) 467-8910 or request a free quote to talk about your project."}];
+const BOOK_NOUN = "a free quote";
+if (!"+16144678910".replace("+1", "")) document.querySelectorAll(".needs-phone").forEach(e => e.remove());
+const log = document.getElementById("log"), opts = document.getElementById("opts"), chat = document.getElementById("chat");
+
+function say(text, who = "bot") {
+  const d = document.createElement("div");
+  d.className = "msg " + who; d.textContent = text; log.appendChild(d); log.scrollTop = log.scrollHeight;
+}
+function menu() {
+  opts.innerHTML = "";
+  [...FAQ.map(f => f.q), "Request " + BOOK_NOUN].forEach(q => {
+    const b = document.createElement("button"); b.textContent = q; b.onclick = () => pick(q); opts.appendChild(b);
+  });
+}
+function pick(q) {
+  say(q, "me");
+  const f = FAQ.find(f => f.q === q);
+  if (f) { say(f.a); menu(); } else book();
+}
+function book() {
+  say("Sure. Leave your details and we'll get back to you.");
+  opts.innerHTML = `<form onsubmit="event.preventDefault(); done(this)">
+    <label>Name<input name="n" required autocomplete="name"></label>
+    <label>Phone<input name="p" type="tel" required autocomplete="tel"></label>
+    <label>Preferred day<input name="d" type="date" required></label>
+    <button class="btn">Send request</button></form>`;
+}
+function done(f) {
+  say(`Thanks ${f.n.value}! In the live version this request goes straight to ${document.querySelector('.logo').textContent} by phone and email, and you'd get a confirmation text.`);
+  menu();
+}
+function toggleChat() {
+  const open = chat.classList.toggle("open");
+  document.getElementById("chat-toggle").setAttribute("aria-expanded", open);
+  if (open && !log.children.length) { say("Hi! I can answer common questions or take " + BOOK_NOUN + " request, 24/7."); menu(); }
+}
+function openChat(mode) { if (!chat.classList.contains("open")) toggleChat(); if (mode === "book") pick("Request " + BOOK_NOUN); }
+</script>
+</body>
+</html>
