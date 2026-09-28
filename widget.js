@@ -73,7 +73,7 @@
   async function send(f) {
     const data = Object.fromEntries(new FormData(f));
     if (!cfg.key) {
-      say(`Thanks ${data.name}! In the live version this request goes straight to ${cfg.name} by phone and email, and you'd get a confirmation text.`);
+      say(`Thanks ${data.name}! In the live version this request goes straight to ${cfg.name} by email.`);
       return menu();
     }
     if (data.botcheck) return;
