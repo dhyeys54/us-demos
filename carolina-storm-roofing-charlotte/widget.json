@@ -1,0 +1,23 @@
+{
+  "name": "Carolina Storm Roofing",
+  "book_noun": "a free quote",
+  "phone": "(704) 307-9171",
+  "faq": [
+    {
+      "q": "When can you come out to inspect my roof?",
+      "a": "We're open Mon–Sun 7 AM–9 PM. Call or use this form to schedule a free inspection. Emergency repairs available 24/7."
+    },
+    {
+      "q": "Do you help with insurance claims?",
+      "a": "Yes, we provide free storm damage inspections and assist with filing insurance claims. Call us to schedule."
+    },
+    {
+      "q": "What's your warranty on roof repairs and new roofs?",
+      "a": "We offer a 2-year workmanship warranty on all labor. Call us to discuss specific coverage for your project."
+    },
+    {
+      "q": "How quickly can you respond to emergency damage?",
+      "a": "We're available 24/7 for emergency tarp service and urgent repairs. Call (704) 307-9171 anytime."
+    }
+  ]
+}

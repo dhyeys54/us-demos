@@ -1,0 +1,23 @@
+{
+  "name": "Vinyl Addictions",
+  "book_noun": "a service appointment",
+  "phone": "+1-704-488-9181",
+  "faq": [
+    {
+      "q": "What types of vehicle customization do you offer?",
+      "a": "We specialize in full color changes, commercial wraps, paint protection film (PPF), window tinting, racing stripes, and wheel wraps. Contact us to discuss your specific needs."
+    },
+    {
+      "q": "How long does a wrap or PPF installation take?",
+      "a": "Installation times vary depending on the project scope and vehicle type. Call us at +1-704-488-9181 for a detailed estimate."
+    },
+    {
+      "q": "Do you work on all vehicle types?",
+      "a": "Yes, we service cars, trucks, commercial vehicles, and more. Request a service appointment to discuss your vehicle."
+    },
+    {
+      "q": "What are your hours?",
+      "a": "Call us at +1-704-488-9181 for today's hours and to schedule your appointment."
+    }
+  ]
+}

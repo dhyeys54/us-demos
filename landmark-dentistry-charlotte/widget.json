@@ -1,0 +1,23 @@
+{
+  "name": "LandMark Dentistry - Charlotte",
+  "book_noun": "an appointment",
+  "phone": "(704) 347-2557",
+  "faq": [
+    {
+      "q": "What services do you offer?",
+      "a": "We provide comprehensive dental care including cleanings, preventive care, implants, crowns, wisdom teeth removal, cosmetic dentistry, and treatment for sleep apnea and TMJ disorders."
+    },
+    {
+      "q": "What are your hours?",
+      "a": "Monday through Wednesday, 7 AM to 4 PM. Thursday, 7 AM to 3 PM. Friday, 8 AM to 1 PM. Closed Saturday and Sunday."
+    },
+    {
+      "q": "Can I request an appointment after hours?",
+      "a": "Yes. Use the booking form anytime, even after hours or on weekends. We'll get back to you to confirm your appointment."
+    },
+    {
+      "q": "Where are you located?",
+      "a": "We're at 300 Billingsley Road, Charlotte, NC. You can call us at (704) 347-2557 for directions or parking details."
+    }
+  ]
+}

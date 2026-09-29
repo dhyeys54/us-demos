@@ -1,0 +1,23 @@
+{
+  "name": "Aten & Garofalo Dentistry",
+  "book_noun": "an appointment",
+  "phone": "+1-704-540-4252",
+  "faq": [
+    {
+      "q": "What services does Aten & Garofalo Dentistry offer?",
+      "a": "We provide cleaning and prevention, cosmetic procedures like whitening and veneers, restorative work including crowns and implants, emergency dental care, and sleep apnea treatment with custom snore guards."
+    },
+    {
+      "q": "How do I schedule an appointment?",
+      "a": "Click 'Request an appointment' above or call +1-704-540-4252. We respond to requests even after hours and on weekends."
+    },
+    {
+      "q": "What are your hours?",
+      "a": "Monday–Wednesday 8 AM–5 PM, Thursday 7 AM–2 PM, and Friday by appointment."
+    },
+    {
+      "q": "Where are you located?",
+      "a": "3420, Toringdon Way, Charlotte, NC."
+    }
+  ]
+}

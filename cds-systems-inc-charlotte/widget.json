@@ -1,0 +1,23 @@
+{
+  "name": "CDS Systems, Inc.",
+  "book_noun": "a free quote",
+  "phone": "704-230-0238",
+  "faq": [
+    {
+      "q": "Do you work on commercial and industrial roofing?",
+      "a": "Yes, we specialize in commercial and industrial roofing installation, repair, and replacement. We work with TPO, EPDM, metal, and other commercial roofing materials."
+    },
+    {
+      "q": "Can you inspect my roof for leaks?",
+      "a": "Absolutely. We offer professional roof inspections and leak detection to identify damage and weak points before they become costly problems."
+    },
+    {
+      "q": "What areas do you serve?",
+      "a": "We service Charlotte, Columbia, Gastonia, Fort Mill, and Rock Hill. Call us to confirm if we serve your location."
+    },
+    {
+      "q": "How quickly can you schedule?",
+      "a": "Call us at 704-230-0238 or request a free quote online, and we'll follow up with available times."
+    }
+  ]
+}

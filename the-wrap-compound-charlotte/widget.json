@@ -1,0 +1,23 @@
+{
+  "name": "The Wrap Compound",
+  "book_noun": "a service appointment",
+  "phone": "(704) 773-9110",
+  "faq": [
+    {
+      "q": "What services do you offer?",
+      "a": "We offer full color change wraps, paint protection film, custom graphics, racing stripes, chrome deletes, and partial vehicle wraps with professional installation."
+    },
+    {
+      "q": "What are your hours?",
+      "a": "Call us at (704) 773-9110 for today's hours. We're located at 7525 Pence Road, Charlotte, NC."
+    },
+    {
+      "q": "How long does a wrap typically take?",
+      "a": "Turnaround time depends on the wrap complexity and what you're having done. Call or request a service appointment to discuss your specific project timeline."
+    },
+    {
+      "q": "Do you work with custom designs?",
+      "a": "Yes. We create custom graphics, racing stripes, and personalized designs. Discuss your vision when you call or book a consultation."
+    }
+  ]
+}

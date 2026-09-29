@@ -1,0 +1,23 @@
+{
+  "name": "Modern Family Dental Care - University",
+  "book_noun": "an appointment",
+  "phone": "+1-980-498-1037",
+  "faq": [
+    {
+      "q": "What services do you offer?",
+      "a": "We provide comprehensive dental care including checkups and cleanings, cosmetic services like whitening and Invisalign, restorative treatments such as implants and root canals, emergency care, sleep wellness services, and pediatric dentistry for children."
+    },
+    {
+      "q": "Can I schedule an appointment online?",
+      "a": "Yes, you can request an appointment any time, even after hours or on weekends. We get your request and follow up directly to confirm the details."
+    },
+    {
+      "q": "What should I do in a dental emergency?",
+      "a": "Call us at +1-980-498-1037 for same-day emergency treatment. We handle dental pain, injuries, and urgent problems. You can also request an appointment online and mention the emergency."
+    },
+    {
+      "q": "Do you treat children?",
+      "a": "Yes, we offer gentle, child-friendly pediatric dentistry to help children build healthy dental habits from an early age."
+    }
+  ]
+}

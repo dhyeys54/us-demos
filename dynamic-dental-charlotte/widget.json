@@ -1,0 +1,23 @@
+{
+  "name": "Dynamic Dental",
+  "book_noun": "an appointment",
+  "phone": "+1-704-916-9970",
+  "faq": [
+    {
+      "q": "What services do you offer?",
+      "a": "We provide check-ups and cleanings, fillings, whitening, and emergency dental care. For a full list, call us at +1-704-916-9970."
+    },
+    {
+      "q": "What are your hours?",
+      "a": "Call us at +1-704-916-9970 for today's hours and to check availability."
+    },
+    {
+      "q": "Do you handle emergencies?",
+      "a": "Yes, we provide emergency dental visits. Call +1-704-916-9970 for immediate availability."
+    },
+    {
+      "q": "How do I book an appointment?",
+      "a": "Fill out the form above with your name and number. We'll confirm the details with you directly."
+    }
+  ]
+}

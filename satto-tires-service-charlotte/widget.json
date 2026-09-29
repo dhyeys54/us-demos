@@ -1,0 +1,23 @@
+{
+  "name": "Satto Tires & Service",
+  "book_noun": "a service appointment",
+  "phone": "+1-704-359-7788",
+  "faq": [
+    {
+      "q": "What types of tires do you carry?",
+      "a": "We stock new and certified used tires for most vehicles, with professional installation, balancing, and rotation services."
+    },
+    {
+      "q": "Do I need an appointment?",
+      "a": "No appointment required. We operate on a first-come, first-served basis, but you can request an appointment through the booking widget to get in touch."
+    },
+    {
+      "q": "What other services do you offer?",
+      "a": "Beyond tires, we offer oil changes, brake service, wheel alignment, air conditioning repair, diagnostic service, and rim cleaning."
+    },
+    {
+      "q": "What are your hours?",
+      "a": "Call us at +1-704-359-7788 for today's hours."
+    }
+  ]
+}
