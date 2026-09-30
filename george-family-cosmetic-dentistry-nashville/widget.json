@@ -1,0 +1,23 @@
+{
+  "name": "George Family & Cosmetic Dentistry",
+  "book_noun": "an appointment",
+  "phone": "(615) 703-6233",
+  "faq": [
+    {
+      "q": "What if I'm nervous about the dentist?",
+      "a": "We offer sedation dentistry options to make your visit comfortable and stress-free."
+    },
+    {
+      "q": "Do you do same-day work?",
+      "a": "Yes. We can place same-day crowns and handle many restorations in a single visit with our advanced technology."
+    },
+    {
+      "q": "What insurance do you accept?",
+      "a": "We accept most PPO insurance plans. Call (615) 703-6233 to verify your coverage."
+    },
+    {
+      "q": "What are your hours?",
+      "a": "Monday–Thursday, 7 AM to 4 PM. Closed Friday–Sunday. Request an appointment online anytime, and we'll get back to you."
+    }
+  ]
+}

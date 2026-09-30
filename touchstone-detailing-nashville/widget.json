@@ -1,0 +1,23 @@
+{
+  "name": "Touchstone Detailing",
+  "book_noun": "a service appointment",
+  "phone": "+1-615-240-6240",
+  "faq": [
+    {
+      "q": "What areas do you service?",
+      "a": "We offer mobile detailing and in-shop services in the Nashville area. Call +1-615-240-6240 for details about your location."
+    },
+    {
+      "q": "How long does a detail take?",
+      "a": "Service times vary depending on the type of detail and vehicle condition. Contact us for a time estimate specific to your needs."
+    },
+    {
+      "q": "Do you offer ceramic coating?",
+      "a": "Yes, we offer ceramic coating services for long-lasting paint protection. Request a service appointment to discuss options and pricing."
+    },
+    {
+      "q": "Can you detail RVs and boats?",
+      "a": "Yes, we offer specialized detailing services for boats, RVs, and commercial fleets. Call +1-615-240-6240 for availability."
+    }
+  ]
+}

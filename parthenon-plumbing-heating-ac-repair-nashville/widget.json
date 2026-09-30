@@ -1,0 +1,23 @@
+{
+  "name": "Parthenon Plumbing, Heating, & AC Repair",
+  "book_noun": "a free quote",
+  "phone": "+1 931-345-3663",
+  "faq": [
+    {
+      "q": "Do you offer emergency service?",
+      "a": "Yes, we're available 24/7 for emergency plumbing and HVAC repairs. Call us anytime at +1 931-345-3663."
+    },
+    {
+      "q": "What areas do you serve?",
+      "a": "We serve Nashville, Tennessee and the surrounding area. Call for details about your address at +1 931-345-3663."
+    },
+    {
+      "q": "Do you handle both plumbing and HVAC?",
+      "a": "Yes, we offer both plumbing services (drain cleaning, water heaters, emergency repairs) and HVAC services (AC repair, furnace service, maintenance plans)."
+    },
+    {
+      "q": "How quickly can you schedule a visit?",
+      "a": "Request a free quote online anytime, even after hours. We'll get back to you to confirm timing and details at +1 931-345-3663."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Gorham & Ammarell Dentistry",
+  "book_noun": "an appointment",
+  "phone": "(615) 327-4914",
+  "faq": [
+    {
+      "q": "What services do you offer?",
+      "a": "We offer check-ups and cleanings, cosmetic dentistry (whitening, crowns, veneers), restorative care (fillings, bridges, dentures), orthodontics, and emergency dental care."
+    },
+    {
+      "q": "What are your hours?",
+      "a": "We're open Monday–Thursday 7 AM – 5 PM and Friday 7 AM – 11 AM. Request an appointment any time, even after hours."
+    },
+    {
+      "q": "Do you treat dental emergencies?",
+      "a": "Yes. We handle emergency dental care. Call us at (615) 327-4914 or request an appointment and let us know it's urgent."
+    },
+    {
+      "q": "How do I schedule an appointment?",
+      "a": "Use the booking button above, fill out your information and what you need, and we'll confirm the details with you directly. You can also call (615) 327-4914."
+    }
+  ]
+}

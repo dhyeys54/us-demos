@@ -1,0 +1,23 @@
+{
+  "name": "Madison Family Dental",
+  "book_noun": "an appointment",
+  "phone": "+1-615-455-8663",
+  "faq": [
+    {
+      "q": "What should I do if I have a dental emergency?",
+      "a": "We offer emergency visits. Call us at +1-615-455-8663 right away, or request an appointment above if it's after hours."
+    },
+    {
+      "q": "Do you offer membership plans?",
+      "a": "Yes, we offer membership plans as an alternative to dental insurance. Ask about our plans when you call or book an appointment."
+    },
+    {
+      "q": "How do I schedule an appointment?",
+      "a": "You can request an appointment above using the form, or call us directly at +1-615-455-8663. Online booking is available."
+    },
+    {
+      "q": "What services do you offer?",
+      "a": "We offer comprehensive dental care including fillings and crowns, dental implants, cosmetic veneers, tooth extractions, and sedation dentistry for anxious patients."
+    }
+  ]
+}

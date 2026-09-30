@@ -1,0 +1,23 @@
+{
+  "name": "Low Price Auto Glass",
+  "book_noun": "a service appointment",
+  "phone": "+1-615-350-7227",
+  "faq": [
+    {
+      "q": "What types of glass service do you offer?",
+      "a": "We provide windshield repair and replacement, side and rear window replacement, window motor and regulator repair, sunroof glass repair and replacement, and mobile auto glass service."
+    },
+    {
+      "q": "Can you come to me?",
+      "a": "Yes, we offer mobile auto glass service by appointment. We'll come to your location for your convenience."
+    },
+    {
+      "q": "How long does the service take?",
+      "a": "Most standard jobs are completed within 45 minutes to 1 hour. Call us at +1-615-350-7227 for specific details about your job."
+    },
+    {
+      "q": "What are your hours?",
+      "a": "We're open Monday–Saturday, 8 am–5 pm. Sunday appointments are available. Call +1-615-350-7227 to book."
+    }
+  ]
+}
